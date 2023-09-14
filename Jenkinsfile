@@ -6,6 +6,11 @@ pipeline {
             steps {
                 sh 'mvn --version'
             }
+            post {
+                success {
+                    echo 'success'
+                }
+            }
         }
     }
 }
